@@ -1,0 +1,243 @@
+body {
+  margin: 0px;
+}
+
+.cv-document {
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: arial, sans-serif, tahoma;
+  font-size: 10pt;
+}
+
+.cv-page {
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  width: 900px;
+  min-height: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  position: relative;
+
+  padding: 40px;
+}
+/* Tạo margin và đồng thời chỉ định khu vực của hình ảnh */
+.section {
+  position: relative;
+  margin: 40px;
+}
+/* Chỉnh sửa các tiêu đề h2 */
+.section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+/* chỉnh sửa về kích cỡ và cách dòng sao cho giống với thiết kế */
+.section-content {
+  font-size: 16px;
+  line-height: 1.3;
+}
+/* Chỉnh sửa tên giống yêu cầu */
+.name {
+  color: #0e2452;
+  margin-bottom: 0;
+  font-size: 55px;
+}
+/* Chỉ định hình ảnh */
+.images {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* Căn chỉnh các thông tin trên header */
+#info .section-title {
+  width: 17%;
+  border-bottom: none;
+  text-transform: none;
+  margin: 10px 0;
+}
+#info .section-content {
+  font-size: 20px;
+  width: 82%;
+}
+/* ghép 2 thẻ div vào thành 1 hàng  */
+#info .section-title,
+#info .section-content {
+  display: inline-block;
+  line-height: 2.3;
+}
+/* chỉnh sửa các mốc thời gian */
+.time {
+  width: 30%;
+}
+/* chỉnh sửa các nội dung ứng với mốc thời gian ở phần mục tiêu nghề nghiệp, học vấn ,... */
+.content {
+  width: 70%;
+}
+/* chỉnh sửa margin chữ Mục tiêu nghề nghiệp sao cho giống thiết kế */
+#target .section-title {
+  margin-bottom: 30px;
+}
+/* ghép 2 thẻ nội dung của mục học vấn và chỉnh sửa giống theo thiết kế */
+.education-content-1,
+.education-content-2 {
+  display: flex;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  padding: 5px 0;
+}
+/*căn chỉnh margin để tạo cột timeline */
+#education .section-content {
+  margin-left: 20px;
+}
+/* chỉ định vị trí cho cột timeline và dấu chấm tròn */
+#education .section-content {
+  position: relative;
+}
+/* tạo, căn chỉnh các thông số cho cột timeline */
+#education .section-content::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  background-color: gray;
+  top: 0;
+  bottom: 10px;
+  margin-left: -20px;
+}
+/* tạo dấu Chấm tròn và hiển thị trên cột timeline */
+.education-content-1::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-left: -25px;
+  background-color: black;
+  top: 10px;
+  border-radius: 50%;
+}
+/* tạo dấu chấm tròn thứ 2 và hiển thị trên cột timeline */
+.education-content-2::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-left: -25px;
+  background-color: black;
+  top: 84px;
+  border-radius: 50%;
+}
+/* ghép 2 thẻ nội dung của mục Kinh nghiệm làm việc và chỉnh sửa
+sao cho giống với thiết kế */
+.experience-content-1,
+.experience-content-2 {
+  display: flex;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  padding: 5px 0;
+}
+/*căn chỉnh margin để tạo cột timeline */
+#experience .section-content {
+  margin-left: 20px;
+}
+/* chỉ định vị trí cho cột timeline và dấu chấm tròn */
+#experience .section-content {
+  position: relative;
+}
+/* tạo, căn chỉnh các thông số cho cột timeline */
+#experience .section-content::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  background-color: gray;
+  top: 0;
+  bottom: 10px;
+  margin-left: -20px;
+}
+/* tạo dấu Chấm tròn và hiển thị trên cột timeline */
+.experience-content-1::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-left: -25px;
+  background-color: black;
+  top: 10px;
+  border-radius: 50%;
+}
+/* tạo dấu Chấm tròn thứ 2 và hiển thị trên cột timeline */
+.experience-content-2::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-left: -25px;
+  background-color: black;
+  top: 147px;
+  border-radius: 50%;
+}
+/* ghép các thẻ nội dung của mục hoạt động và chỉnh sửa sao cho giống
+với thiết kế */
+.activity-content {
+  display: flex;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  padding: 5px 0;
+}
+/* ghép các thẻ nội dung của mục kĩ năng và chỉnh sửa sao cho giống
+với thiết kế */
+.skill-content {
+  display: flex;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  padding: 5px 0;
+}
+/* in đậm và chỉnh sửa nội dung của mục ngôn ngữ lập trình */
+.language {
+  width: 30%;
+  font-weight: bold;
+}
+/* ghép các thẻ nội dung của mục chứng nhận giải thưởng và
+ chỉnh sửa sao cho giống với thiết kế */
+.certificate-content {
+  display: flex;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  padding: 5px 0;
+}
+/* viết hoa nội dung trong thẻ */
+#certificate .content {
+  text-transform: uppercase;
+}
+/*căn chỉnh padding của các mục âm nhạc, du lịch ... sao cho 
+giống với thiết kế */
+#hobby ul {
+  padding-left: 20px;
+}
+/* căn chỉnh thẻ h2 của mục dự án sao cho giống với thiết kế */
+#project h2 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+/* căn chỉnh thẻ p của mục dự án sao cho giống với thiết kế */
+#project p {
+  margin-top: 0;
+}
+/* tắt gạch dòng của thẻ a */
+a:link {
+  text-decoration: none;
+}
+/* chuyển màu nội dung thẻ a sang blue */
+a:visited {
+  color: #0000ff;
+}
+/*gạch chân cuối cùng của bài */
+#contact .section-content {
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
